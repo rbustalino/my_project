@@ -1,14 +1,14 @@
-This are the steps on how to install or the requirements needed of the app this must be created using the github file creation facility
+## This are the steps on how to install or the requirements needed of the app this must be created using the github file creation facility
 
 
-## Create Remote Repository on GitHub.com
+### Create Remote Repository on GitHub.com
 
 If you don't already have an account go ahead to github.com, signup, and create a repository, this is where our files will be added. 
 You can create your repository by going to “repositories” and by clicking “new”
 
 
 
-## Download Git
+### Download Git
 
 1. Download Installer - Got to https://git-scm.com/ and select the downloader for your machine, I will be using windows
 2. Install git - Once the installer is downloaded go ahead and follow the steps to get things set up, I tend to just leave the default settings so if you don't have a preference just let it guide you.
@@ -27,7 +27,7 @@ You can also do this from your command prompt, in fact I will be using the comma
 * git pull - Pull latest changes from remote repository
 * git clone - Clone repo from github
   
-## Create Local Repository
+### Create Local Repository
 
 1.  Initialize new git repo | git init
     
@@ -56,7 +56,7 @@ When you run git init a new folder will be added to your project files, these fi
 5. Set remote |  git remote add origin <repo url>
   Now that all the files are set locally we are ready to push them to our remote repository. We set the remote so when we run “git push”, git knows which remote repo to send       these files to.
 
-  Ex: git remote add origin https://github.com/divanov11/newproject.git
+  Ex: git remote add origin https://github.com/rbustalino/my_project.git
   
 6.  Push to remote | git push -u origin <branch name>
   Now that we have our remote set, we can push our local github repo live. The default branch on github is called “master” unless you set your own. When you first create a         repository on github you will see steps to rename this branch to “main”, if you decided to rename the default branch then use that name instead of master.
