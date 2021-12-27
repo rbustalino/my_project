@@ -1,0 +1,50 @@
+
+
+
+{% extends "application\\base.html"   %}
+{% load static %}
+{% block content %}
+
+<h2><string>{{ info }}</string></h2>
+
+    
+
+ {% if id == 0 %}
+    <h3>No Data</h3>
+{% else %}
+
+<div>
+    <table>
+        <thead>
+          <tr>
+              <th>Brand Name</th>
+              <th>Model</th>
+              <th>Display</th>
+              <th>Ram</th>
+              <th>Storage</th>
+              <th>battery</th>
+              <th>Operating System</th>
+              <th>Price</th>
+              
+
+          </tr>
+        </thead>
+          <tbody>
+               <tr>
+                 <td>{{cdata.brand_name}}</td>
+                 <td>{{cdata.model_name}}</td>
+                 <td>{{cdata.display}}</td>
+                 <td>{{cdata.ram}}</td>
+                 <td>{{cdata.storage}}</td>
+                 <td>{{cdata.battry}}</td>
+                 <td>{{cdata.os}}</td>
+                 <td>{{cdata.price}}</td>
+               </tr>
+          
+           </tbody>
+       </table>
+   
+       </div>
+       <a href="{% url 'application:contactpage' %}"> <h5><strong>Back to Smart Phones</strong></h5></a>   
+{% endif %}
+{% endblock %}

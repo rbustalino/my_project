@@ -1,0 +1,32 @@
+
+
+
+{% extends "application\\base.html"   %}
+{% load static %}
+{% block content %}
+
+<h2> <strong>{{ info }} </strong> </h2>
+<table>
+    <thead>
+      <tr>
+          <th>Brand Name</th>
+          <th>Model</th>
+          <th>Serial ID</th>
+      </tr>
+    </thead>
+
+
+    
+        {% for item in product_list %}
+      
+        <tr>
+            <td>{{item.brand_name}}</td>
+            <td>{{item.model_name}}</td>
+            <td><a href ="{% url 'application:contactpg' item.id%}">{{ item.id }} </a></td>
+          </tr>
+            
+   
+        {% endfor %}
+    </table>
+  
+{% endblock %}
