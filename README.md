@@ -1,16 +1,16 @@
 This are the steps on how to install or the requirements needed of the app this must be created using the github file creation facility
 
-Article summary
+# Article summary
 
-Create Remote Repository on GitHub.com
+## Create Remote Repository on GitHub.com
 
-Download Git
+## Download Git
 
 1. Download Installer
 2. Install git
 3. Check Git version
   
-Create Local Repository
+## Create Local Repository
 
 1. git init
 2. git status
