@@ -1,4 +1,4 @@
-## This are the steps on how to install or the requirements needed of the app this must be created using the github file creation facility
+## This are the steps on how to install or the requirements needed of the app using the github file creation facility
 
 
 ### Create Remote Repository on GitHub.com
